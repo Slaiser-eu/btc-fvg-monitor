@@ -36,9 +36,13 @@ jobs:
         run: python fvg_monitor.py
 
       - name: Save signal state
-        run: |
+      run: |
+        if [ -f fvg_state.json ]; then
           git config user.name "BTC FVG Monitor"
           git config user.email "actions@github.com"
           git add fvg_state.json
           git diff --cached --quiet || git commit -m "Update FVG signal state"
           git push
+        else
+          echo "No state file to save"
+        fi
