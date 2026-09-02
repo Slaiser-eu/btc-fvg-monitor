@@ -1,11 +1,6 @@
 name: BTC FVG Monitor
 
 on:
-   push:
-    branches:
-      - main
-    paths:
-      - ".github/workflows/fvg-monitor.yml"
    schedule:
     - cron: "5 * * * *"
       timezone: "Europe/Tallinn"
