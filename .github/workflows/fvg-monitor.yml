@@ -6,8 +6,7 @@ on:
       - main
     paths:
       - ".github/workflows/fvg-monitor.yml"
-  
-  schedule:
+   schedule:
     - cron: "5 * * * *"
       timezone: "Europe/Tallinn"
   workflow_dispatch:
