@@ -12,15 +12,15 @@ import requests
 # ============================================================
 
 BINANCE_KLINES_URL = (
-    "https://api.binance.com/api/v3/klines"
-    "?symbol=BTCUSDT&interval=1h&limit=100"
+    "https://data-api.binance.vision/api/v3/klines"
+    "?symbol=BTCUSDT&interval=1h&limit=5"
 )
+
 
 BINANCE_PRICE_URL = (
-    "https://api.binance.com/api/v3/ticker/price"
+    "https://data-api.binance.vision/api/v3/ticker/price"
     "?symbol=BTCUSDT"
 )
-
 TELEGRAM_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
