@@ -3,6 +3,7 @@ name: BTC FVG Monitor
 on:
    schedule:
     - cron: "5 * * * *"
+      timezone: "Europe/Tallinn"
    workflow_dispatch:
 permissions:
   contents: write
